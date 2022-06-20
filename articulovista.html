@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="estilos.css">
+	
+
+</head>  
+<body>
+ <form class="formulario">
+    
+    <h1>Cargar artículo</h1>
+     <div class="contenedor">
+     
+           
+         
+         <div class="input-contenedor">
+         <i class="fas fa-bank icon"></i>
+         
+         <select class="form-select" style="padding-bottom: 15px; padding-right: 293px;" >
+            <option>Tipo Subsistema</option>
+            <option>Universidad Tecnológica</option>
+            <option>Universidad Politécnica</option>
+            <option>Instituto Tecnológico</option>
+          </select>
+         
+         </div>
+         
+         <div class="input-contenedor">
+         <i class="fas fa-book icon"></i>
+         <input type="text" placeholder="Título Artículo">
+
+        </div>
+         
+        <div class="input-contenedor">
+        <i class="fas fa-user icon"></i>
+        <input type="text" placeholder="Autor">
+	
+	    </div>
+         
+         <div class="input-contenedor">
+         <i class="fas fa- icon"></i>
+         <input type="text" placeholder="Breve Resumen del artículo" style="padding: 60px;" > <br>
+         
+
+	    </div>
+         
+         <div class="input-contenedor">
+         <i class="fas fa-file icon"></i>
+         <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+         <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+         </form>
+
+	    </div>
+         
+         <input type="submit" value="Cargar archivo" class="button">
+     </div>
+    </form>
+</body>
+</html>
